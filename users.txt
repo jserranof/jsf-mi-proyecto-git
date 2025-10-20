@@ -1,0 +1,3 @@
+Usuarios activos en my-proyecto
+Admin: JSF
+Users A: ABC1, ABC2
