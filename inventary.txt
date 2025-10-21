@@ -1,0 +1,4 @@
+# Inventario de Herramientas
+Tool Developer : Eclipse
+Tool Test : Selenium, Postman
+Tool Jproy : Git, Miro, Kanban
