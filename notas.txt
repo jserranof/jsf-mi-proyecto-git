@@ -1,3 +1,4 @@
 Notas de mi-proyecto
 Linea 1: Nombre autor JSF
 Linea 2: Linea ya correcta
+Linea 3: Estrategia de Pruebas
