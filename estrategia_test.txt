@@ -1,5 +1,5 @@
 # Metodologia de Trabajo y Estrategias TEST
 PR Humo
-PR Integracion
-PR Aceptacion Funcional
+PR Integracion y Analisis codigo
+PR Aceptacion Funcional (caja blanca y caja negra)
 PR Rendimiento
