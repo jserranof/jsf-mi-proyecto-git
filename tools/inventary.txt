@@ -1,0 +1,6 @@
+# Inventario de Herramientas
+Tool Developer : Eclipse, Junit
+Tool Test : Selenium, Postman, Jmeter
+Tool Jproy : Git, Miro, Kanban
+Tool Prod: Dockers
+Tool CEO: DashBoard
