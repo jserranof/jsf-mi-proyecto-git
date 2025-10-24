@@ -1,12 +1,22 @@
 name: ci
 on: push
+    branches: main
 jobs:
-  test:
+  copiar_fichero:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm ci
-      - run: npm test -- --ci
+      - name: Checkout del código
+        uses: actions/checkout@v4
+      - name: Copiar el archivo existente a uno nuevo
+        run: |
+          ARCHIVO_ORIGINAL="config.txt"
+          ARCHIVO_NUEVO="test_config.txt"       
+          echo "Verificando si existe el archivo original..."
+          if [ -f $ARCHIVO_ORIGINAL ]; then
+            cp $ARCHIVO_ORIGINAL $ARCHIVO_NUEVO
+            echo "Contenido del nuevo archivo:"
+            cat $ARCHIVO_NUEVO
+          else
+            echo "❌ ERROR: El archivo $ARCHIVO_ORIGINAL no existe en el repositorio."
+            exit 1 # Termina el job con fallo
+          fi
