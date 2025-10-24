@@ -17,6 +17,6 @@ jobs:
             echo "Contenido del nuevo archivo:"
             cat $ARCHIVO_NUEVO
           else
-            echo "❌ ERROR: El archivo $ARCHIVO_ORIGINAL no existe en el repositorio."
+            echo "ERROR: El archivo $ARCHIVO_ORIGINAL no existe en el repositorio."
             exit 1 # Termina el job con fallo
           fi
